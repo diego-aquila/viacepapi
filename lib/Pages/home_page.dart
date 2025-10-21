@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:via_cep_api/Models/endereco.dart';
+import 'package:via_cep_api/Models/endereco_model.dart';
 import 'package:via_cep_api/Services/via_cep_service.dart';
 
 class HomePage extends StatefulWidget {
