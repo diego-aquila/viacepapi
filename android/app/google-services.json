@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "484082663077",
+    "project_id": "viacepapi-d4e06",
+    "storage_bucket": "viacepapi-d4e06.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:484082663077:android:1c08eefd2715ac50d4974c",
+        "android_client_info": {
+          "package_name": "com.example.via_cep_api"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsf5OxNEa6TOEif_8ZaId8dQcLTgFG1Uk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
