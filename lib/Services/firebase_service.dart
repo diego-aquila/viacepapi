@@ -40,18 +40,8 @@ class FirebaseService {
     }
   }
 
-  Future<bool> delete(String id) async {
-    try {
-      await _firestore.collection(collectionName).doc(id).delete();
-
-      if (await readById(id) != null) {
-        return false;
-      }
-
-      return true;
-    } catch (erro) {
-      throw Exception("Erro ao deletar o documento: $erro ");
-    }
+  Future<void> delete(String id) async {
+    await _firestore.collection(collectionName).doc(id).delete();
   }
 
   Future<void> update(String id, Map<String, dynamic> dados) async {
