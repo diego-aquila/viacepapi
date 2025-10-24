@@ -51,4 +51,65 @@ class FirebaseService {
       throw Exception("Erro ao atualizar o documento: $erro");
     }
   }
+
+  /// Limpa toda a coleção de uma só vez usando batch
+  /// Mais eficiente que deletar um por um
+  Future<void> clearCollection() async {
+    try {
+      final QuerySnapshot snapshot = await _firestore
+          .collection(collectionName)
+          .get();
+
+      if (snapshot.docs.isEmpty) {
+        return; // Nada para deletar
+      }
+
+      // Usa WriteBatch para operação atômica e mais rápida
+      WriteBatch batch = _firestore.batch();
+
+      for (DocumentSnapshot doc in snapshot.docs) {
+        batch.delete(doc.reference);
+      }
+
+      // Executa todas as deleções de uma vez
+      await batch.commit();
+    } catch (erro) {
+      throw Exception("Erro ao limpar a coleção: $erro");
+    }
+  }
+
+  /// Limpa toda a coleção em lotes (para coleções muito grandes)
+  /// Recomendado para coleções com mais de 500 documentos
+  Future<void> clearCollectionInBatches({int batchSize = 500}) async {
+    try {
+      bool hasMore = true;
+
+      while (hasMore) {
+        final QuerySnapshot snapshot = await _firestore
+            .collection(collectionName)
+            .limit(batchSize)
+            .get();
+
+        if (snapshot.docs.isEmpty) {
+          hasMore = false;
+          break;
+        }
+
+        WriteBatch batch = _firestore.batch();
+
+        for (DocumentSnapshot doc in snapshot.docs) {
+          batch.delete(doc.reference);
+        }
+
+        await batch.commit();
+
+        // Se retornou menos que o limite, acabou
+        if (snapshot.docs.length < batchSize) {
+          hasMore = false;
+        }
+      }
+    } catch (erro) {
+      throw Exception("Erro ao limpar a coleção em lotes: $erro");
+    }
+  }
 }

@@ -5,6 +5,5 @@ import 'package:via_cep_api/app.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-
   runApp(const ViaCepApi());
 }

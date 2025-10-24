@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:via_cep_api/Models/usuario_model.dart';
+import 'package:via_cep_api/Services/firebase_service.dart';
 
 class FormCadastroUsuarioPage extends StatefulWidget {
   const FormCadastroUsuarioPage({super.key});
@@ -17,6 +19,52 @@ class _FormCadastroUsuarioPageState extends State<FormCadastroUsuarioPage> {
   TextEditingController confirmacaoController = TextEditingController();
 
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
+
+  final FirebaseService _firebaseService = FirebaseService(
+    collectionName: "usuarios",
+  );
+
+  Future<void> salvarUsuario() async {
+    if (!formKey.currentState!.validate()) {
+      return;
+    }
+
+    Usuario usuario = Usuario(
+      id: "",
+      nome: nomeController.text,
+      email: emailController.text,
+      telefone: telefoneController.text,
+      cpf: cpfController.text,
+      senha: senhaController.text,
+    );
+
+    try {
+      String idUser = await _firebaseService.create(usuario.toMap());
+
+      if (idUser.isNotEmpty) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            backgroundColor: Colors.green,
+            content: Column(
+              children: [
+                Text(
+                  "Sucesso: $idUser",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  "Usuário cadastrado com sucesso!",
+                  style: TextStyle(color: Colors.white),
+                ),
+              ],
+            ),
+          ),
+        );
+      }
+    } catch (e) {}
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -118,12 +166,7 @@ class _FormCadastroUsuarioPageState extends State<FormCadastroUsuarioPage> {
                       ),
                     ),
                     ElevatedButton(
-                      onPressed: () {
-                        if (!formKey.currentState!.validate()) {
-                          return;
-                        }
-                        print("Formulário validado");
-                      },
+                      onPressed: salvarUsuario,
                       child: Text("Cadastrar"),
                     ),
                   ],
