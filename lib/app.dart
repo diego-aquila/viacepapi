@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:via_cep_api/Pages/lista_compras_page_refatorada.dart';
+import 'package:via_cep_api/Pages/location_page.dart';
 
 class ViaCepApi extends StatelessWidget {
   const ViaCepApi({super.key});
@@ -11,7 +11,7 @@ class ViaCepApi extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const ListaComprasPage(),
+      home: const LocationPage(),
     );
   }
 }
