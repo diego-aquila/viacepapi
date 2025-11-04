@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:via_cep_api/Pages/location_page.dart';
+import 'package:via_cep_api/Pages/connectivity_page.dart';
+import 'package:via_cep_api/Pages/flutter_map_page.dart';
 
 class ViaCepApi extends StatelessWidget {
   const ViaCepApi({super.key});
@@ -11,7 +12,7 @@ class ViaCepApi extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const LocationPage(),
+      home: const ConnectivityPage(),
     );
   }
 }

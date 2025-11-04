@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class='pc chrome win psc_dir-ltr psc_form-xlarge' dir='ltr' lang='pt'>
+<!-- Copyright (c) 2000, 2017, Oracle and/or its affiliates. All rights reserved. -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><body><table border='1' cellpadding='3' cellspacing='0'>
+<tr>
+<th>ID</th><th>Nome</th><th>Descrição</th><th>Observações do Aluno</th><th>Observações existentes do aluno</th><th>Motivo</th><th>19.00-22.30 Sampaio</th></tr>
+<tr>
+<td  >1143086846</td>
+<td  >Beatriz Jesus Silva</td>
+<td  >NIVEL MÉDIO</td>
+<td  >Observações do Aluno</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<td  >Motivo</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<tr>
+<td  >1142813341</td>
+<td  >Carlos Alexandre Gonçalves</td>
+<td  >NIVEL MÉDIO</td>
+<td  >Observações do Aluno</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<td  >Motivo</td>
+<td  style="mso-number-format:\@;"  >Y</td>
+<tr>
+<td  >1141938452</td>
+<td  >Cesar Augusto dos Santos Costa Luiz</td>
+<td  >NIVEL MÉDIO</td>
+<td  >Observações do Aluno</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<td  >Motivo</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<tr>
+<td  >1142739307</td>
+<td  >Clodoaldo Antonio da Silva</td>
+<td  >NIVEL MÉDIO</td>
+<td  >Observações do Aluno</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<td  >Motivo</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<tr>
+<td  >1140671904</td>
+<td  >Douglas Rodrigues Balbino</td>
+<td  >NIVEL MÉDIO</td>
+<td  >Observações do Aluno</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<td  >Motivo</td>
+<td  style="mso-number-format:\@;"  >Y</td>
+<tr>
+<td  >1143086843</td>
+<td  >Gabriel Aparecido da Silva</td>
+<td  >NIVEL MÉDIO</td>
+<td  >Observações do Aluno</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<td  >Motivo</td>
+<td  style="mso-number-format:\@;"  >Y</td>
+<tr>
+<td  >1142740732</td>
+<td  >Gustavo Gonçalves de Barros</td>
+<td  >NIVEL MÉDIO</td>
+<td  >Observações do Aluno</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<td  >Motivo</td>
+<td  style="mso-number-format:\@;"  >Y</td>
+<tr>
+<td  >1143039147</td>
+<td  >Gustavo Henrique Caravitta Bononi</td>
+<td  >NIVEL MÉDIO</td>
+<td  >Observações do Aluno</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<td  >Motivo</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<tr>
+<td  >1143086840</td>
+<td  >Hebert Ferreira Moreira dos Santos</td>
+<td  >NIVEL MÉDIO</td>
+<td  >Observações do Aluno</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<td  >Motivo</td>
+<td  style="mso-number-format:\@;"  >Y</td>
+<tr>
+<td  >1142816084</td>
+<td  >João Victor Santos Pereira</td>
+<td  >NIVEL MÉDIO</td>
+<td  >Observações do Aluno</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<td  >Motivo</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<tr>
+<td  >1143086845</td>
+<td  >Lucas Morais da Silva</td>
+<td  >NIVEL MÉDIO</td>
+<td  >Observações do Aluno</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<td  >Motivo</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<tr>
+<td  >1141687274</td>
+<td  >Lucimara Dias da Silva</td>
+<td  >NIVEL MÉDIO</td>
+<td  >Observações do Aluno</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<td  >Motivo</td>
+<td  style="mso-number-format:\@;"  >Y</td>
+<tr>
+<td  >1142531910</td>
+<td  >Marcos Vinicius Gomes da Silva</td>
+<td  >NIVEL MÉDIO</td>
+<td  >Observações do Aluno</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<td  >Motivo</td>
+<td  style="mso-number-format:\@;"  >Y</td>
+<tr>
+<td  >1142927161</td>
+<td  >Nathan da Silva Nascimento</td>
+<td  >NIVEL MÉDIO</td>
+<td  >Observações do Aluno</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<td  >Motivo</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<tr>
+<td  >1142121075</td>
+<td  >Pablo Bezerra Ramos</td>
+<td  >NIVEL MÉDIO</td>
+<td  >Observações do Aluno</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<td  >Motivo</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<tr>
+<td  >1143086842</td>
+<td  >Pamela Soares Barboza</td>
+<td  >NIVEL MÉDIO</td>
+<td  >Observações do Aluno</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<td  >Motivo</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<tr>
+<td  >1143019423</td>
+<td  >Paulo Minoru Yamanaka</td>
+<td  >NIVEL MÉDIO</td>
+<td  >Observações do Aluno</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<td  >Motivo</td>
+<td  style="mso-number-format:\@;"  >Y</td>
+<tr>
+<td  >1143088443</td>
+<td  >Renato Navarro Marques Gonzaga</td>
+<td  >NIVEL MÉDIO</td>
+<td  >Observações do Aluno</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<td  >Motivo</td>
+<td  style="mso-number-format:\@;"  >Y</td>
+<tr>
+<td  >1142857317</td>
+<td  >Vanessa Alves</td>
+<td  >NIVEL MÉDIO</td>
+<td  >Observações do Aluno</td>
+<td  style="mso-number-format:\@;"  >N</td>
+<td  >Motivo</td>
+<td  style="mso-number-format:\@;"  >N</td>
+</table></body></html>
